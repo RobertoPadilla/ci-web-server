@@ -1,0 +1,58 @@
+#-------------------------
+# Environment Files
+#-------------------------
+# These should never be under version control,
+# as it poses a security risk.
+src/.env
+src/.vagrant
+src/Vagrantfile
+
+#-------------------------
+# Temporary Files
+#-------------------------
+src/writable/cache/*
+!src/writable/cache/index.html
+
+src/writable/logs/*
+!src/writable/logs/index.html
+
+src/writable/session/*
+!src/writable/session/index.html
+
+src/writable/uploads/*
+!src/writable/uploads/index.html
+
+src/writable/debugbar/*
+
+src/php_errors.log
+
+#-------------------------
+# User Guide Temp Files
+#-------------------------
+src/user_guide_src/build/*
+src/user_guide_src/cilexer/build/*
+src/user_guide_src/cilexer/dist/*
+src/user_guide_src/cilexer/pycilexer.egg-info/*
+
+#-------------------------
+# Test Files
+#-------------------------
+src/tests/coverage*
+
+# Don't save phpunit under version control.
+src/phpunit
+
+#-------------------------
+# Composer
+#-------------------------
+src/vendor/
+
+#-------------------------
+# IDE / Development Files
+#-------------------------
+
+# Modules Testing
+src/_modules/*
+
+# phpenv local config
+src/.php-version

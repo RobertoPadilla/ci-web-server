@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  php:
+    build: .
+    container_name: ci-server
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/app
